@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding with Logic Gates</title>
+    <script src="adder.js" defer></script>
+</head>
+<body>
+    <h1 id="title">Binary Adder</h1>
+    <div class="adder"> 
+        <!-- Labels And Switches -->
+        <div class="adder-panel flex flex-col"> 
+
+            <!-- Upper Switches -->
+            <div class="upper-switches flex flex-space-between">
+                <div>
+                    <button id="reset">RESET</button>
+                </div>
+                <div class="switches flex flex-row">
+                    <div class="plus-minus flex flex-col">
+                        <h1>1</h1>
+                        <h1>0</h1>
+                    </div>
+                    <div class="switch">
+                        <img src="images/switch_on.png">
+                    </div>
+                    <div class="switch">
+                        <img src="images/switch_off.png">
+                    </div>
+                    <div class="switch">
+                        <img src="images/switch_on.png">
+                    </div>
+                    <div class="switch">
+                        <img src="images/switch_off.png">
+                    </div>
+                    <div class="switch">
+                        <img src="images/switch_off.png">
+                    </div>
+                    <div class="switch">
+                        <img src="images/switch_on.png">
+                    </div>
+                    <div class="switch">
+                        <img src="images/switch_off.png">
+                    </div>
+                    <div class="switch">
+                        <img src="images/switch_off.png">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Switches -->
+            <div class="lower-switches flex flex-space-between">
+                <div class="label">
+                    <h1>+</h1>
+                </div>
+                <div class="switches flex flex-row">
+                    <div class="plus-minus flex flex-col">
+                        <h1>1</h1>
+                        <h1>0</h1>
+                    </div>
+                    <div class="switch">
+                        <img src="images/switch_on.png">
+                    </div>
+                    <div class="switch">
+                        <img src="images/switch_off.png">
+                    </div>
+                    <div class="switch">
+                        <img src="images/switch_off.png">
+                    </div>
+                    <div class="switch">
+                        <img src="images/switch_off.png">
+                    </div>
+                    <div class="switch">
+                        <img src="images/switch_off.png">
+                    </div>
+                    <div class="switch">
+                        <img src="images/switch_off.png">
+                    </div>
+                    <div class="switch">
+                        <img src="images/switch_off.png">
+                    </div>
+                    <div class="switch">
+                        <img src="images/switch_off.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Light Bulbs -->
+        <div class="lightbulbs flex flex-row">
+            <div class="bulb">
+                <img src="images/bulb_off.png">
+            </div>
+            <div class="bulb">
+                <img src="images/bulb_off.png">
+            </div>
+            <div class="bulb">
+                <img src="images/bulb_off.png">
+            </div>
+            <div class="bulb">
+                <img src="images/bulb_off.png">
+            </div>
+            <div class="bulb">
+                <img src="images/bulb_off.png">
+            </div>
+            <div class="bulb">
+                <img src="images/bulb_off.png">
+            </div>
+            <div class="bulb">
+                <img src="images/bulb_off.png">
+            </div>
+            <div class="bulb">
+                <img src="images/bulb_off.png">
+            </div>
+            <div class="bulb">
+                <img src="images/bulb_off.png">
+            </div>
+        </div>
+    </div>
+    <div class="result_first_switches flex">
+        <table>
+            <tr>
+                <th>row: </th>
+                <th>decimal:</th>
+                <th>binary:</th>
+            </tr>
+            <tr>
+                <td>upper switches</td>
+                <td id="val_upper_switches_decimal">16</td>
+                <td id="val_upper_switches_binary">00010000</td>
+            </tr>
+            <tr>
+                <td>lower switches</td>
+                <td id="val_lower_switches_decimal">8</td>
+                <td id="val_lower_switches_binary">00000100</td>
+            </tr>
+            <tr id="result">
+                <td>Result</td>
+                <td id="res_decimal">24</td>
+                <td id="res_binary">00011000</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
